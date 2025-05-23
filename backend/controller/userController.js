@@ -93,3 +93,32 @@ export const getUserDetails = catchAsyncErrors(async(req,res,next) =>{
     user,
   });
 });
+
+export const logoutAdmin = catchAsyncErrors(async (req, res, next) => {
+  res.status(200).cookie("adminToken", "", {
+    httpOnly: true,
+    expires: new Date(0), // More robust for cookie removal
+    sameSite: "strict", // Include if used when setting the cookie
+    secure: process.env.NODE_ENV === "production", // Include if used when setting the cookie
+    path: "/", // Include if used when setting the cookie
+  }).json({
+    success: true,
+    message: "Admin logged Out successfully",
+  });
+});
+
+
+export const logoutPatient = catchAsyncErrors(async (req, res, next) => {
+  res.status(200).cookie("patientToken", "", {
+    httpOnly: true,
+    expires: new Date(0), // More robust for cookie removal
+    sameSite: "strict", // Include if used when setting the cookie
+    secure: process.env.NODE_ENV === "production", // Include if used when setting the cookie
+    path: "/", // Include if used when setting the cookie
+  }).json({
+    success: true,
+    message: "Patient logged Out successfully",
+  });
+});
+
+
