@@ -72,10 +72,13 @@ userSchema.methods.comparePassword = async function(enteredPassword) {
 };
 
 userSchema.methods.generateJsonWebToken = function() {
-    return jwt.sign({ id: this._id }, process.env.JWT_SECRET_KEY, {
-        expiresIn: process.env.JWT_EXPIRES_IN // <-- you probably want a separate env variable for expiration
-    });
-};
+    return jwt.sign(
+      { id: this._id }, // Correct: payload is an object
+      process.env.JWT_SECRET_KEY,
+      { expiresIn: process.env.JWT_EXPIRES } // Now correctly references "JWT_EXPIRES"
+    );
+  };
+  
 
 // Fix OverwriteModelError by checking if model already exists
 export const User = mongoose.models.User || mongoose.model("User", userSchema);
