@@ -11,14 +11,18 @@ import appointmentRouter from "./router/appointmentRouter.js";
 const app = express();
 
 config({ path: "./config/config.env" });
+
+// Middleware to enable Cross-Origin Resource Sharing, so your frontend (hosted elsewhere) can access your API.
+// CORS -- Cross-Origin Resource Sharing.
+
 app.use(cors({
     origin: [process.env.FRONTEND_URL, process.env.BACKEND_URL],
     methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true,
+    credentials: true, // credential can also be sent as reqs
 }));
 app.use(cookieParser());
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.json()); // middle ware for json requests
+app.use(express.urlencoded({ extended: true })); // middle ware to access forms
 app.use(fileUpload({
     useTempFiles: true,     
     tempFileDir: "/tmp/",

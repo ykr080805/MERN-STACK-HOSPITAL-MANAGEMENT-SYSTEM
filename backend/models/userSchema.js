@@ -71,6 +71,7 @@ userSchema.methods.comparePassword = async function(enteredPassword) {
     return await bcrypt.compare(enteredPassword, this.password);
 };
 
+// return the token in string form
 userSchema.methods.generateJsonWebToken = function() {
     return jwt.sign(
       { id: this._id }, // Correct: payload is an object
@@ -78,7 +79,7 @@ userSchema.methods.generateJsonWebToken = function() {
       { expiresIn: process.env.JWT_EXPIRES } // Now correctly references "JWT_EXPIRES"
     );
   };
-  
+
 
 // Fix OverwriteModelError by checking if model already exists
 export const User = mongoose.models.User || mongoose.model("User", userSchema);
