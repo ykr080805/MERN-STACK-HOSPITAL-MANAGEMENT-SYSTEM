@@ -333,38 +333,8 @@ Contributions are welcome! Please follow these steps:
 - Test your changes thoroughly
 - Update documentation as needed
 
-## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Contact
-
-**Project Creator:** CodeWithZeeshu
-- **YouTube:** [CodeWithZeeshu](https://www.youtube.com/@codewithzeeshu)
-- **GitHub Repository:** [MERN-Stack-Hospital-Management-System](https://github.com/Zeeshu911/MERN-Stack-Hospital-Management-System-Web-Application)
-- **Discord:** [Join for Discussion](https://discord.com/invite/mr28TfNZvM)
-
-**Social Media:**
-- **LinkedIn:** [Muhammad Zeeshan Khan](https://www.linkedin.com/in/muhammad-zeeshan-khan-dev/)
-- **Instagram:** [@z_4_zeeshuuu](https://www.instagram.com/z_4_zeeshuuu/)
-- **Facebook:** [Profile](https://www.facebook.com/profile.php?id=100030535123397&mibextid=9R9pXO)
-
-## 🙏 Acknowledgments
-
-- Thanks to the MERN stack community for excellent documentation
-- MongoDB for providing robust database solutions
-- Cloudinary for seamless image storage solutions
-- All the open-source contributors who made this project possible
-
-## 📚 Learning Resources
-
-- [Official React Documentation](https://reactjs.org/docs)
-- [Node.js Documentation](https://nodejs.org/en/docs/)
-- [Express.js Guide](https://expressjs.com/en/guide/)
-- [MongoDB Manual](https://docs.mongodb.com/manual/)
-- [Mongoose Documentation](https://mongoosejs.com/docs/)
-
----
 
 **⭐ If you found this project helpful, please give it a star!**
 
