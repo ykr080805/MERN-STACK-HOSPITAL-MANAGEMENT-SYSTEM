@@ -2,10 +2,6 @@
 
 A comprehensive web-based Hospital Management System built using the MERN stack (MongoDB, Express.js, React.js, Node.js) that streamlines hospital operations and enhances patient care through modern technology solutions.
 
-## 🎥 Tutorial Video
-
-This project is based on the comprehensive tutorial by **CodeWithZeeshu**: [MERN Stack Project: Build a Full Stack Hospital Management System](https://www.youtube.com/watch?v=9OGhwqWQ8fI)
-
 ## 📋 Table of Contents
 
 - [Features](#features)
